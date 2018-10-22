@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'New Page',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,5 +17,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/markdowns`,
+        name: 'markdown-pages',
+      },
+    },
+    'gatsby-transformer-remark',
   ],
 }
