@@ -3,9 +3,9 @@ Coding, Questions, Resources
 ## to do
 
 [x] create index page
-[ ] display lists
+[x] display lists
 [ ] keyword search
-[ ] content
+[x] content
 [ ] content
 [ ] content
 [ ] style
