@@ -17,8 +17,9 @@ const IndexPage = ({
   let cs = []
   edges.forEach(edge => {
     let string = edge.node.frontmatter.path
-    switch (string) {
-      case string.startsWith('/ba'):
+    console.log(string)
+    switch (string.slice(0, 3)) {
+      case '/ba':
         basics.push(<PostLink key={edge.node.id} post={edge.node} />)
         break
       case '/js':
@@ -36,20 +37,29 @@ const IndexPage = ({
       default:
         break
     }
-    return 'done'
   })
   return (
     <Layout>
-      <h3>Basics</h3>
-      <div>{basics}</div>
-      <h3>JavaScript</h3>
-      <div>{javascript}</div>
-      <h3>Style</h3>
-      <div>{style}</div>
-      <h3>Sorting</h3>
-      <div>{sorting}</div>
-      <h3>Computer Science</h3>
-      <div>{cs}</div>
+      <div className="post-list">
+        <h3>Basics</h3>
+        {basics}
+      </div>
+      <div className="post-list">
+        <h3>JavaScript</h3>
+        {javascript}
+      </div>
+      <div className="post-list">
+        <h3>Style</h3>
+        {style}
+      </div>
+      <div className="post-list">
+        <h3>Sorting</h3>
+        {sorting}
+      </div>
+      <div className="post-list">
+        <h3>Computer Science</h3>
+        {cs}
+      </div>
     </Layout>
   )
 }
