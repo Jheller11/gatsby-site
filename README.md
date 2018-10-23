@@ -2,7 +2,7 @@ Coding, Questions, Resources
 
 ## to do
 
-[ ] create index page
+[x] create index page
 [ ] display lists
 [ ] keyword search
 [ ] content
