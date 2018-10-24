@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from './layout'
 
 export default function Template({ data }) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const keywords = frontmatter.keywords.split(', ').map(keyword => {
     return <li>{keyword}</li>
