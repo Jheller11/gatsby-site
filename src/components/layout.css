@@ -628,3 +628,7 @@ pre tt:after {
 .post-list {
   margin-bottom: 1em;
 }
+.flex-2-columns {
+  display: flex;
+  justify-content: space-around;
+}

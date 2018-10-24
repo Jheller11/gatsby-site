@@ -37,25 +37,31 @@ const IndexPage = ({
   })
   return (
     <Layout>
-      <div className="post-list">
-        <h3>Basics</h3>
-        {basics}
-      </div>
-      <div className="post-list">
-        <h3>JavaScript</h3>
-        {javascript}
-      </div>
-      <div className="post-list">
-        <h3>Style</h3>
-        {style}
-      </div>
-      <div className="post-list">
-        <h3>Sorting</h3>
-        {sorting}
-      </div>
-      <div className="post-list">
-        <h3>Computer Science</h3>
-        {cs}
+      <div className="flex-2-columns">
+        <div className="column">
+          <div className="post-list">
+            <h3>Basics</h3>
+            {basics}
+          </div>
+          <div className="post-list">
+            <h3>JavaScript</h3>
+            {javascript}
+          </div>
+          <div className="post-list">
+            <h3>Style</h3>
+            {style}
+          </div>
+        </div>
+        <div className="column">
+          <div className="post-list">
+            <h3>Sorting</h3>
+            {sorting}
+          </div>
+          <div className="post-list">
+            <h3>Computer Science</h3>
+            {cs}
+          </div>
+        </div>
       </div>
     </Layout>
   )

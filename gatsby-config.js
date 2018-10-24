@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'New Page',
+    title: 'Reverse a String',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
