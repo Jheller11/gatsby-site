@@ -1,37 +1,9 @@
-Coding, Questions, Resources
+# Reverse a String
 
-## to do
+## Description
 
-[x] create index page
-[x] display lists
-[ ] keyword search
-[x] content
-[ ] content
-[ ] content
-[ ] style
-[ ] deploy
-[ ] description
-[ ] repls
-[ ] content
-[ ] content
-[ ] resources
-[ ] email sign up
-[ ] analytics
-[ ] content
-[ ] content
-[ ] content
-[ ] content
+This project is a place for me to post information about stuff I'm coding, things I've researched, or questions I've been asked in job interviews. I try to include simple code samples where appropriate, mostly in JS unless the topic is in a specific language.
 
-## possible contents
+It also includes helpful tools like an embedded JS repl.
 
-1. reverse a string
-2. flexbox
-3. grid
-4. arrays/linked lists
-5. callbacks
-6. promises
-7. sorting
-8. switch
-9. es6/es7
-10. project descriptions
-11. code samples
+Using Gatsby/GraphQL I create a markdown for each concept/topic and categorize based on the frontmatter.
