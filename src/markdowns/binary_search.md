@@ -36,7 +36,8 @@ const binarySearch = (arr, target) => {
   }
 }
 
-binarySearch(values, 8)
+binarySearch(values, 9) // 3
+binarySearch(values, 8) // 'Not Found'
 ```
 
 values = a sorted array
