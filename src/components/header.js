@@ -1,6 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+const navStyle = {
+  color: 'red',
+  textDecoration: 'none',
+  marginRight: '1em',
+}
+
 const Header = ({ siteTitle }) => (
   <div
     style={{
@@ -26,6 +32,15 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Link to="/" style={navStyle}>
+        Posts
+      </Link>
+      <Link to="/articles" style={navStyle}>
+        Articles
+      </Link>
+      <Link to="/repl" style={navStyle}>
+        REPL
+      </Link>
     </div>
   </div>
 )

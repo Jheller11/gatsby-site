@@ -13,7 +13,7 @@ const Repl = () => {
           scrolling="no"
           frameborder="no"
           allowtransparency="true"
-          allowFullscreen="true"
+          allowFullScreen={true}
           sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"
         />
       </div>
