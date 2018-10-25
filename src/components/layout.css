@@ -632,3 +632,6 @@ pre tt:after {
   display: flex;
   justify-content: space-around;
 }
+nav > *:hover {
+  text-decoration: underline white !important;
+}

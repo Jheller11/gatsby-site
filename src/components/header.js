@@ -32,21 +32,28 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <Link to="/" style={navStyle}>
-        Posts
-      </Link>
-      <Link to="/articles" style={navStyle}>
-        Articles
-      </Link>
-      <Link to="/resources" style={navStyle}>
-        Resources
-      </Link>
-      <Link to="/jsrepl" style={navStyle}>
-        JS REPL
-      </Link>
-      <Link to="/rubyrepl" style={navStyle}>
-        Ruby REPL
-      </Link>
+      <nav>
+        <Link to="/" style={navStyle}>
+          Posts
+        </Link>
+        <Link to="/articles" style={navStyle}>
+          Articles
+        </Link>
+        <Link to="/resources" style={navStyle}>
+          Resources
+        </Link>
+        <Link to="/tutorials" style={navStyle}>
+          Tutorials
+        </Link>
+      </nav>
+      <nav>
+        <Link to="/jsrepl" style={navStyle}>
+          JS REPL
+        </Link>
+        <Link to="/rubyrepl" style={navStyle}>
+          Ruby REPL
+        </Link>
+      </nav>
     </div>
   </div>
 )
