@@ -1,14 +1,22 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
 
 const Projects = () => {
-  const projects = []
   return (
     <Layout>
       <p className="page-description">
         A collection of some of my small projects/games/code samples.
       </p>
-      <div>{projects}</div>
+      <ul>
+        <li>
+          <Link to="projects/night-sky">Stars</Link>
+          <p>
+            A codepen which creates a night sky with random star placement,
+            color, and size.
+          </p>
+        </li>
+      </ul>
     </Layout>
   )
 }
