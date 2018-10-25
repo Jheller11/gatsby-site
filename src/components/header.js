@@ -38,8 +38,14 @@ const Header = ({ siteTitle }) => (
       <Link to="/articles" style={navStyle}>
         Articles
       </Link>
-      <Link to="/repl" style={navStyle}>
-        REPL
+      <Link to="/resources" style={navStyle}>
+        Resources
+      </Link>
+      <Link to="/jsrepl" style={navStyle}>
+        JS REPL
+      </Link>
+      <Link to="/rubyrepl" style={navStyle}>
+        Ruby REPL
       </Link>
     </div>
   </div>

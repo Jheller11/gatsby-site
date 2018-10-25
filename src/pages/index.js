@@ -14,7 +14,6 @@ const IndexPage = ({
   let cs = []
   edges.forEach(edge => {
     let string = edge.node.frontmatter.path
-    console.log(string)
     switch (string.slice(0, 3)) {
       case '/ba':
         basics.push(<PostLink key={edge.node.id} post={edge.node} />)
