@@ -36,6 +36,11 @@ const IndexPage = ({
   })
   return (
     <Layout>
+      <p className="page-description">
+        A collection of my own posts about topics that can be confusing or that
+        I've been asked about in interviews. Code samples and sources included
+        where appropriate.
+      </p>
       <div className="flex-2-columns">
         <div className="column">
           <div className="post-list">

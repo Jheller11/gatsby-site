@@ -45,6 +45,9 @@ const Header = ({ siteTitle }) => (
         <Link to="/tutorials" style={navStyle}>
           Tutorials
         </Link>
+        <Link to="/projects" style={navStyle}>
+          Projects
+        </Link>
       </nav>
       <nav>
         <Link to="/jsrepl" style={navStyle}>

@@ -5,6 +5,7 @@ const Articles = () => {
   const articles = []
   return (
     <Layout>
+      <p className="page-description" />
       <div>{articles}</div>
     </Layout>
   )
