@@ -7,28 +7,42 @@ const IndexPage = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  let basics = []
-  let javascript = []
-  let style = []
-  let sorting = []
-  let cs = []
+  let categories = {
+    basics: [],
+    javascript: [],
+    style: [],
+    sorting: [],
+    cs: [],
+    react: [],
+    ruby: [],
+  }
   edges.forEach(edge => {
     let string = edge.node.frontmatter.path
     switch (string.slice(0, 3)) {
       case '/ba':
-        basics.push(<PostLink key={edge.node.id} post={edge.node} />)
+        categories.basics.push(<PostLink key={edge.node.id} post={edge.node} />)
         break
       case '/js':
-        javascript.push(<PostLink key={edge.node.id} post={edge.node} />)
+        categories.javascript.push(
+          <PostLink key={edge.node.id} post={edge.node} />
+        )
         break
       case '/st':
-        style.push(<PostLink key={edge.node.id} post={edge.node} />)
+        categories.style.push(<PostLink key={edge.node.id} post={edge.node} />)
         break
       case '/so':
-        sorting.push(<PostLink key={edge.node.id} post={edge.node} />)
+        categories.sorting.push(
+          <PostLink key={edge.node.id} post={edge.node} />
+        )
         break
       case '/cs':
-        cs.push(<PostLink key={edge.node.id} post={edge.node} />)
+        categories.cs.push(<PostLink key={edge.node.id} post={edge.node} />)
+        break
+      case '/re':
+        categories.react.push(<PostLink key={edge.node.id} post={edge.node} />)
+        break
+      case '/ru':
+        categories.ruby.push(<PostLink key={edge.node.id} post={edge.node} />)
         break
       default:
         break
@@ -45,25 +59,35 @@ const IndexPage = ({
         <div className="column">
           <div className="post-list">
             <h3>Basics</h3>
-            {basics}
+            {categories.basics}
           </div>
           <div className="post-list">
             <h3>JavaScript</h3>
-            {javascript}
+            {categories.javascript}
           </div>
           <div className="post-list">
             <h3>Style</h3>
-            {style}
+            {categories.style}
           </div>
         </div>
         <div className="column">
           <div className="post-list">
             <h3>Sorting</h3>
-            {sorting}
+            {categories.sorting}
           </div>
           <div className="post-list">
             <h3>Computer Science</h3>
-            {cs}
+            {categories.cs}
+          </div>
+        </div>
+        <div className="column">
+          <div className="post-list">
+            <h3>React</h3>
+            {categories.react}
+          </div>
+          <div className="post-list">
+            <h3>Ruby</h3>
+            {categories.ruby}
           </div>
         </div>
       </div>
