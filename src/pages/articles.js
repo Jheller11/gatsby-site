@@ -1,8 +1,16 @@
 import React from 'react'
 import Layout from '../components/layout'
+import articlesArray from '../data/articles'
 
 const Articles = () => {
-  const articles = []
+  const articles = articlesArray.map(item => {
+    return (
+      <li>
+        <a href={item.link}>{item.name}</a>
+        <p>{item.description}</p>
+      </li>
+    )
+  })
   return (
     <Layout>
       <p className="page-description" />
