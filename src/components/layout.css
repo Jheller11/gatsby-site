@@ -633,5 +633,5 @@ pre tt:after {
   justify-content: space-around;
 }
 nav > *:hover {
-  text-decoration: underline white !important;
+  border-bottom: 1px solid white !important;
 }
