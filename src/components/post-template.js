@@ -22,7 +22,6 @@ export default function Template({ data }) {
           <h2>{frontmatter.title}</h2>
           <ul>{keywords}</ul>
           <p>{frontmatter.date}</p>
-
           <div
             dangerouslySetInnerHTML={{ __html: html ? html : 'Coming soon.' }}
           />
