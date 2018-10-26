@@ -3,9 +3,9 @@ import Layout from '../components/layout'
 import articlesArray from '../data/articles'
 
 const Articles = () => {
-  const articles = articlesArray.map(item => {
+  const articles = articlesArray.map((item, i) => {
     return (
-      <li>
+      <li key={i}>
         <a href={item.link}>{item.name}</a>
         <p>{item.description}</p>
       </li>

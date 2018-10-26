@@ -3,12 +3,13 @@ import Layout from '../components/layout'
 import tutorialsArray from '../data/tutorials'
 
 const Tutorials = () => {
-  const tutorials = tutorialsArray.map(item => {
+  const tutorials = tutorialsArray.map((item, i) => {
+    let style = item.completed ? 'green' : 'red'
     return (
-      <li>
+      <li key={i}>
         <a href={item.link}>{item.name}</a>
         <p>{item.description}</p>
-        <p>{item.status}</p>
+        <p style={{ backgroundColor: style }}>Completed: {item.completed}</p>
       </li>
     )
   })
