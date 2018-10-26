@@ -5,6 +5,7 @@ let tutorials = [
     description:
       'Serverless Computing allows you to concentrate on your application code instead of managing servers or installing any software. You can build a Serverless Website by using AWS Lambda, a serverless compute service and it’s simply great.',
     completed: false,
+    linkToCode: '',
   },
 ]
 

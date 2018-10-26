@@ -6,12 +6,20 @@ const Tutorials = () => {
   const tutorials = tutorialsArray.map((item, i) => {
     let style = item.completed ? 'green' : 'red'
     return (
-      <li key={i}>
+      <li
+        style={{
+          border: `1px solid ${style}`,
+          padding: '1em',
+          listStyle: 'none',
+        }}
+        key={i}
+      >
         <a href={item.link}>{item.name}</a>
         <p>{item.description}</p>
         <p style={{ color: style }}>
-          Completed: {item.completed.toString().toUpperCase()}
+          {item.completed ? 'Complete' : 'Not Complete'}
         </p>
+        <p>{item.completed ? <a href={item.linkToCode}>View Code</a> : ''}</p>
       </li>
     )
   })
