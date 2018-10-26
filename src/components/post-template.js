@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from './layout'
 
 export default function Template({ data }) {
@@ -10,6 +10,9 @@ export default function Template({ data }) {
   })
   return (
     <Layout>
+      <Link style={{ color: 'red', textDecoration: 'none' }} to="/">
+        Back
+      </Link>
       <div>
         <div>
           <h1>{frontmatter.title}</h1>
@@ -20,6 +23,9 @@ export default function Template({ data }) {
           />
         </div>
       </div>
+      <Link style={{ color: 'red', textDecoration: 'none' }} to="/">
+        Back
+      </Link>
     </Layout>
   )
 }
