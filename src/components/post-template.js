@@ -6,7 +6,11 @@ export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const keywords = frontmatter.keywords.split(', ').map(keyword => {
-    return <li key={keyword}>{keyword}</li>
+    return (
+      <li className="keyword-item" key={keyword}>
+        {keyword}
+      </li>
+    )
   })
   return (
     <Layout>
@@ -15,9 +19,10 @@ export default function Template({ data }) {
       </Link>
       <div>
         <div>
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <h2>{frontmatter.title}</h2>
           <ul>{keywords}</ul>
+          <p>{frontmatter.date}</p>
+
           <div
             dangerouslySetInnerHTML={{ __html: html ? html : 'Coming soon.' }}
           />
