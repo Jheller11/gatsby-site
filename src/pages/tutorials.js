@@ -9,7 +9,9 @@ const Tutorials = () => {
       <li key={i}>
         <a href={item.link}>{item.name}</a>
         <p>{item.description}</p>
-        <p style={{ backgroundColor: style }}>Completed: {item.completed}</p>
+        <p style={{ color: style }}>
+          Completed: {item.completed.toString().toUpperCase()}
+        </p>
       </li>
     )
   })
