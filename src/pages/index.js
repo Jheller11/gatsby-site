@@ -70,7 +70,7 @@ const IndexPage = ({
             {categories.style}
           </div>
         </div>
-        <div className="column">
+        <div className="column column-middle">
           <div className="post-list">
             <h3>Sorting</h3>
             {categories.sorting}
