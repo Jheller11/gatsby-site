@@ -7,6 +7,14 @@ let tutorials = [
     completed: false,
     linkToCode: '',
   },
+  {
+    name: 'First web scraper',
+    link: 'https://first-web-scraper.readthedocs.io/en/latest/',
+    description: 'A step-by-step guide to writing a web scraper with Python.',
+    completed: true,
+    linkToCode:
+      'https://github.com/Jheller11/python-scraper-tutorial/blob/master/scrape.py',
+  },
 ]
 
 export default tutorials
