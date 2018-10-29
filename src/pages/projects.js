@@ -16,6 +16,10 @@ const Projects = () => {
             color, and size.
           </p>
         </li>
+        <li>
+          <Link to="projects/car-scraper">Scraper (Python)</Link>
+          <p>Code to scrape used car prices from ebay.com.</p>
+        </li>
       </ul>
     </Layout>
   )
