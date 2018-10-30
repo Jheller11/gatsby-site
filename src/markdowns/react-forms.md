@@ -37,7 +37,7 @@ class Form extends Component {
       return (
           <form onSubmit={this.handleSubmit}>
             <label htmlFor='label'>LABEL</label>
-            <input onChange={this.handleChange} type='text'                 name='name' placeholder='' />
+            <input onChange={this.handleChange} type='text' name='name' placeholder='' />
             <input type="submit" value="Submit" />
           </form>
       )
