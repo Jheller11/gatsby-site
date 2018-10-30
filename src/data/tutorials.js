@@ -15,6 +15,13 @@ let tutorials = [
     linkToCode:
       'https://github.com/Jheller11/python-scraper-tutorial/blob/master/scrape.py',
   },
+  {
+    name: 'Angular Tutorial',
+    link: 'https://angular.io/tutorial',
+    description: 'First Angular project from documentation.',
+    completed: false,
+    linkToCode: '',
+  },
 ]
 
 export default tutorials
