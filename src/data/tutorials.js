@@ -22,6 +22,14 @@ let tutorials = [
     completed: false,
     linkToCode: '',
   },
+  {
+    name: 'Express with Google Cloud SQL',
+    link:
+      'https://medium.com/@austinhale/building-a-node-api-with-express-and-google-cloud-sql-9bda260b040f',
+    description: 'Use Google Cloud SQL with Express',
+    completed: false,
+    linkToCode: '',
+  },
 ]
 
 export default tutorials

@@ -2,8 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import tutorialsArray from '../data/tutorials'
 
-const Tutorials = props => {
-  console.log(props)
+const Tutorials = () => {
   const tutorials = tutorialsArray.map((item, i) => {
     let style = item.completed ? 'green' : 'red'
     return (
